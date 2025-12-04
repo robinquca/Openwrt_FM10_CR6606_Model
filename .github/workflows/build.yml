@@ -149,7 +149,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-%H%M-immortalwrt24.10-6.6-Airpi_AP3000M")" >> $GITHUB_OUTPUT
+        echo "release_tag=$(date +"%Y.%m.%d-%H%M-immortalwrt24.10-6.6-FM10")" >> $GITHUB_OUTPUT
         touch release.txt
         echo "FM10+5GModern固件" >> release.txt
         echo "后台：192.168.1.1" >> release.txt
